@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.69999999999999996" contentMode="scaleToFill" id="pMG-Jq-leg" customClass="CustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aw2-zh-KQL">
+                    <rect key="frame" x="160" y="22" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="NGE-p5-KCj"/>
+                        <constraint firstAttribute="width" secondItem="Aw2-zh-KQL" secondAttribute="height" multiplier="1:1" id="Ng4-M4-He9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKY-SC-ZF8">
+                    <rect key="frame" x="190" y="23" width="39.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03p-wb-SmC">
+                    <rect key="frame" x="20" y="64" width="379" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Mcl-qt-cKR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0020448825503355706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Aw2-zh-KQL" firstAttribute="leading" secondItem="pMG-Jq-leg" secondAttribute="leading" constant="20" id="2yT-s4-JIY"/>
+                <constraint firstAttribute="bottom" secondItem="03p-wb-SmC" secondAttribute="bottom" id="JOq-VC-fhG"/>
+                <constraint firstItem="03p-wb-SmC" firstAttribute="leading" secondItem="pMG-Jq-leg" secondAttribute="leading" constant="20" id="UQL-29-Ny1"/>
+                <constraint firstItem="EKY-SC-ZF8" firstAttribute="centerY" secondItem="pMG-Jq-leg" secondAttribute="centerY" id="WMM-G3-Vnx"/>
+                <constraint firstItem="Aw2-zh-KQL" firstAttribute="centerY" secondItem="pMG-Jq-leg" secondAttribute="centerY" id="WQc-Wi-UHi"/>
+                <constraint firstItem="EKY-SC-ZF8" firstAttribute="centerX" secondItem="pMG-Jq-leg" secondAttribute="centerX" id="g1j-nQ-hWX"/>
+                <constraint firstAttribute="trailing" secondItem="03p-wb-SmC" secondAttribute="trailing" constant="20" id="iit-IR-gqI"/>
+                <constraint firstItem="03p-wb-SmC" firstAttribute="leading" secondItem="Aw2-zh-KQL" secondAttribute="trailing" id="kpb-iM-NM9"/>
+                <constraint firstItem="EKY-SC-ZF8" firstAttribute="leading" secondItem="Aw2-zh-KQL" secondAttribute="trailing" constant="10" id="sGT-b6-fRS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="kpb-iM-NM9"/>
+                    <exclude reference="2yT-s4-JIY"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="customImage" destination="Aw2-zh-KQL" id="115-v8-BNf"/>
+                <outlet property="customLabel" destination="EKY-SC-ZF8" id="ojS-bo-KcS"/>
+                <outlet property="customView" destination="03p-wb-SmC" id="WxS-r1-jMb"/>
+            </connections>
+            <point key="canvasLocation" x="325.5" y="158.5"/>
+        </view>
+    </objects>
+</document>

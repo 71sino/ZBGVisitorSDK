@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MedicalView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MedicalView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tA3-Qr-9pc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="客户端-01-类目-医疗_02" translatesAutoresizingMaskIntoConstraints="NO" id="by8-83-d4t">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="LkN-QE-5FL"/>
+                        <constraint firstAttribute="trailing" secondItem="by8-83-d4t" secondAttribute="trailing" id="YRv-v0-Npj"/>
+                        <constraint firstAttribute="bottom" secondItem="by8-83-d4t" secondAttribute="bottom" id="bxK-Fl-ML8"/>
+                        <constraint firstItem="by8-83-d4t" firstAttribute="leading" secondItem="tA3-Qr-9pc" secondAttribute="leading" id="gFZ-he-EaQ"/>
+                        <constraint firstItem="by8-83-d4t" firstAttribute="top" secondItem="tA3-Qr-9pc" secondAttribute="top" id="lGT-bb-xFZ"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="LkN-QE-5FL"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LrB-iD-LuH">
+                    <rect key="frame" x="0.0" y="54.5" width="375" height="89.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="客户端-01-类目-医疗_04" translatesAutoresizingMaskIntoConstraints="NO" id="3rt-Qs-RPX">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67j-y6-z2C">
+                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="89.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqe-vH-DZY">
+                                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="89.5"/>
+                                    <connections>
+                                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="1VB-Us-uKC"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Xqe-vH-DZY" secondAttribute="trailing" id="8Il-sg-bzT"/>
+                                <constraint firstAttribute="bottom" secondItem="Xqe-vH-DZY" secondAttribute="bottom" id="OcL-Yq-05R"/>
+                                <constraint firstItem="Xqe-vH-DZY" firstAttribute="leading" secondItem="67j-y6-z2C" secondAttribute="leading" id="T1n-aB-Ktj"/>
+                                <constraint firstItem="Xqe-vH-DZY" firstAttribute="top" secondItem="67j-y6-z2C" secondAttribute="top" id="fur-yV-ern"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="3rt-Qs-RPX" secondAttribute="bottom" id="C3K-wg-0dv"/>
+                        <constraint firstAttribute="trailing" secondItem="3rt-Qs-RPX" secondAttribute="trailing" id="FHY-cp-T7L"/>
+                        <constraint firstItem="67j-y6-z2C" firstAttribute="width" secondItem="LrB-iD-LuH" secondAttribute="width" multiplier="1:2" id="K6x-ZB-eis"/>
+                        <constraint firstItem="3rt-Qs-RPX" firstAttribute="leading" secondItem="LrB-iD-LuH" secondAttribute="leading" id="KXc-BH-uvs"/>
+                        <constraint firstItem="67j-y6-z2C" firstAttribute="top" secondItem="LrB-iD-LuH" secondAttribute="top" id="adc-xs-QYE"/>
+                        <constraint firstItem="67j-y6-z2C" firstAttribute="leading" secondItem="LrB-iD-LuH" secondAttribute="leading" id="bUb-Tq-73C"/>
+                        <constraint firstAttribute="bottom" secondItem="67j-y6-z2C" secondAttribute="bottom" id="glv-hX-5ir"/>
+                        <constraint firstItem="3rt-Qs-RPX" firstAttribute="top" secondItem="LrB-iD-LuH" secondAttribute="top" id="jKw-p0-t5C"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaB-a9-iZj">
+                    <rect key="frame" x="0.0" y="145" width="375" height="80"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="客户端-01-类目-医疗_06" translatesAutoresizingMaskIntoConstraints="NO" id="LqJ-gl-Iim">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LqJ-gl-Iim" secondAttribute="trailing" id="01c-oS-Xrf"/>
+                        <constraint firstItem="LqJ-gl-Iim" firstAttribute="leading" secondItem="aaB-a9-iZj" secondAttribute="leading" id="3jB-yE-j6h"/>
+                        <constraint firstAttribute="bottom" secondItem="LqJ-gl-Iim" secondAttribute="bottom" id="7Fk-nX-YmK"/>
+                        <constraint firstItem="LqJ-gl-Iim" firstAttribute="top" secondItem="aaB-a9-iZj" secondAttribute="top" id="9ML-pP-e04"/>
+                        <constraint firstAttribute="height" constant="60" id="kgQ-Th-jdo"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="kgQ-Th-jdo"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r38-RV-mVN">
+                    <rect key="frame" x="0.0" y="226" width="375" height="54"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="客户端-01-类目-医疗_08" translatesAutoresizingMaskIntoConstraints="NO" id="VgN-w5-Gea">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="VgN-w5-Gea" firstAttribute="top" secondItem="r38-RV-mVN" secondAttribute="top" id="298-Hm-eQL"/>
+                        <constraint firstAttribute="height" constant="40" id="2aa-wa-t4N"/>
+                        <constraint firstItem="VgN-w5-Gea" firstAttribute="leading" secondItem="r38-RV-mVN" secondAttribute="leading" id="Dey-Bw-gHl"/>
+                        <constraint firstAttribute="trailing" secondItem="VgN-w5-Gea" secondAttribute="trailing" id="KW4-TX-BUM"/>
+                        <constraint firstAttribute="bottom" secondItem="VgN-w5-Gea" secondAttribute="bottom" id="U4g-SW-hOl"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="2aa-wa-t4N"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UAx-bX-aaO">
+                    <rect key="frame" x="0.0" y="290.5" width="375" height="134.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="客户端-01-类目-医疗_10" translatesAutoresizingMaskIntoConstraints="NO" id="jdY-uP-au3">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="jdY-uP-au3" firstAttribute="leading" secondItem="UAx-bX-aaO" secondAttribute="leading" id="9cH-2b-usP"/>
+                        <constraint firstAttribute="height" constant="40" id="HRf-xC-sWc"/>
+                        <constraint firstAttribute="height" constant="100" id="fhQ-sZ-id1"/>
+                        <constraint firstAttribute="bottom" secondItem="jdY-uP-au3" secondAttribute="bottom" id="htS-eE-PBy"/>
+                        <constraint firstAttribute="trailing" secondItem="jdY-uP-au3" secondAttribute="trailing" id="rJZ-hv-TV5"/>
+                        <constraint firstItem="jdY-uP-au3" firstAttribute="top" secondItem="UAx-bX-aaO" secondAttribute="top" id="zK3-4B-zG8"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="HRf-xC-sWc"/>
+                            <exclude reference="fhQ-sZ-id1"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fM-J6-yb6">
+                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="客户端-01-类目-医疗_16" translatesAutoresizingMaskIntoConstraints="NO" id="aF9-Kq-yhx">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="aF9-Kq-yhx" secondAttribute="bottom" id="2mL-fd-HnG"/>
+                        <constraint firstItem="aF9-Kq-yhx" firstAttribute="leading" secondItem="8fM-J6-yb6" secondAttribute="leading" id="Sap-Cf-g0a"/>
+                        <constraint firstAttribute="height" constant="49" id="ZpL-hU-MQO"/>
+                        <constraint firstAttribute="trailing" secondItem="aF9-Kq-yhx" secondAttribute="trailing" id="dd6-H2-JGk"/>
+                        <constraint firstItem="aF9-Kq-yhx" firstAttribute="top" secondItem="8fM-J6-yb6" secondAttribute="top" id="u69-xR-dwI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79R-FQ-PV9">
+                    <rect key="frame" x="0.0" y="553.5" width="375" height="54"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="客户端-01-类目-医疗_14" translatesAutoresizingMaskIntoConstraints="NO" id="vHN-qa-iLv">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="vHN-qa-iLv" secondAttribute="trailing" id="91L-Jf-g9j"/>
+                        <constraint firstAttribute="bottom" secondItem="vHN-qa-iLv" secondAttribute="bottom" id="Lui-Oz-ect"/>
+                        <constraint firstItem="vHN-qa-iLv" firstAttribute="top" secondItem="79R-FQ-PV9" secondAttribute="top" id="cTe-IO-1lj"/>
+                        <constraint firstAttribute="height" constant="50" id="ozX-GU-BwA"/>
+                        <constraint firstItem="vHN-qa-iLv" firstAttribute="leading" secondItem="79R-FQ-PV9" secondAttribute="leading" id="rpb-8L-dPv"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ozX-GU-BwA"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tWS-wt-EHZ">
+                    <rect key="frame" x="0.0" y="435" width="375" height="108"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="客户端-01-类目-医疗_12" translatesAutoresizingMaskIntoConstraints="NO" id="USz-2N-hJG">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="USz-2N-hJG" firstAttribute="leading" secondItem="tWS-wt-EHZ" secondAttribute="leading" id="6e4-mg-3kW"/>
+                        <constraint firstAttribute="trailing" secondItem="USz-2N-hJG" secondAttribute="trailing" id="Ssp-s4-BLS"/>
+                        <constraint firstItem="USz-2N-hJG" firstAttribute="top" secondItem="tWS-wt-EHZ" secondAttribute="top" id="Wie-dZ-fdS"/>
+                        <constraint firstAttribute="height" constant="100" id="Xdf-V3-B3g"/>
+                        <constraint firstAttribute="bottom" secondItem="USz-2N-hJG" secondAttribute="bottom" id="dXI-fU-xx3"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Xdf-V3-B3g"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.85364139080047607" green="0.85361582040786743" blue="0.85363030433654785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aaB-a9-iZj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0j3-Cb-IP6"/>
+                <constraint firstItem="tA3-Qr-9pc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="26n-Gl-MNi"/>
+                <constraint firstItem="r38-RV-mVN" firstAttribute="height" secondItem="tA3-Qr-9pc" secondAttribute="height" id="2sB-7V-kqA"/>
+                <constraint firstItem="tWS-wt-EHZ" firstAttribute="height" secondItem="tA3-Qr-9pc" secondAttribute="height" multiplier="2:1" id="4HB-ep-jr6"/>
+                <constraint firstItem="LrB-iD-LuH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6tK-GL-2Ph"/>
+                <constraint firstItem="UAx-bX-aaO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7bC-Zf-ZZ8"/>
+                <constraint firstAttribute="trailing" secondItem="8fM-J6-yb6" secondAttribute="trailing" id="Aq2-Ad-fGd"/>
+                <constraint firstItem="aaB-a9-iZj" firstAttribute="height" secondItem="tA3-Qr-9pc" secondAttribute="height" multiplier="3:2" id="Bqx-N4-pIL"/>
+                <constraint firstAttribute="trailing" secondItem="r38-RV-mVN" secondAttribute="trailing" id="D6i-pK-t2b"/>
+                <constraint firstItem="79R-FQ-PV9" firstAttribute="height" secondItem="r38-RV-mVN" secondAttribute="height" id="DhJ-oU-iYg"/>
+                <constraint firstItem="LrB-iD-LuH" firstAttribute="top" secondItem="tA3-Qr-9pc" secondAttribute="bottom" constant="1" id="E7D-ed-cYj"/>
+                <constraint firstItem="8fM-J6-yb6" firstAttribute="top" secondItem="79R-FQ-PV9" secondAttribute="bottom" constant="10" id="HCa-h8-2N0"/>
+                <constraint firstItem="r38-RV-mVN" firstAttribute="top" secondItem="aaB-a9-iZj" secondAttribute="bottom" constant="1" id="KLr-k6-Fea"/>
+                <constraint firstAttribute="trailing" secondItem="tA3-Qr-9pc" secondAttribute="trailing" id="Kal-MF-k8c"/>
+                <constraint firstItem="r38-RV-mVN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="N2E-qB-A8o"/>
+                <constraint firstItem="UAx-bX-aaO" firstAttribute="top" secondItem="r38-RV-mVN" secondAttribute="bottom" constant="10" id="RY0-vq-i0p"/>
+                <constraint firstAttribute="bottom" secondItem="8fM-J6-yb6" secondAttribute="bottom" id="Td6-AY-Zaf"/>
+                <constraint firstItem="79R-FQ-PV9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UB6-31-x3G"/>
+                <constraint firstAttribute="trailing" secondItem="tWS-wt-EHZ" secondAttribute="trailing" id="Udi-Yc-ywe"/>
+                <constraint firstAttribute="trailing" secondItem="aaB-a9-iZj" secondAttribute="trailing" id="Vml-yX-e4X"/>
+                <constraint firstItem="tWS-wt-EHZ" firstAttribute="top" secondItem="UAx-bX-aaO" secondAttribute="bottom" constant="10" id="Zhg-JU-lX3"/>
+                <constraint firstAttribute="trailing" secondItem="79R-FQ-PV9" secondAttribute="trailing" id="ZpF-WX-git"/>
+                <constraint firstItem="UAx-bX-aaO" firstAttribute="height" secondItem="tA3-Qr-9pc" secondAttribute="height" multiplier="5:2" id="dIE-h3-lut"/>
+                <constraint firstItem="aaB-a9-iZj" firstAttribute="top" secondItem="LrB-iD-LuH" secondAttribute="bottom" constant="1" id="hb2-ud-e0g"/>
+                <constraint firstItem="tA3-Qr-9pc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="m9s-Li-NoQ"/>
+                <constraint firstItem="8fM-J6-yb6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nap-W8-Awe"/>
+                <constraint firstItem="tWS-wt-EHZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="o9b-D5-BBb"/>
+                <constraint firstItem="79R-FQ-PV9" firstAttribute="top" secondItem="tWS-wt-EHZ" secondAttribute="bottom" constant="10" id="tqL-cd-t07"/>
+                <constraint firstItem="LrB-iD-LuH" firstAttribute="height" secondItem="aaB-a9-iZj" secondAttribute="height" multiplier="10:9" id="tsu-4x-7mD"/>
+                <constraint firstAttribute="trailing" secondItem="UAx-bX-aaO" secondAttribute="trailing" id="xqL-N1-FAS"/>
+                <constraint firstAttribute="trailing" secondItem="LrB-iD-LuH" secondAttribute="trailing" id="zvr-bH-lhP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+        <searchDisplayController id="dic-z7-GIX"/>
+    </objects>
+    <resources>
+        <image name="客户端-01-类目-医疗_02" width="750" height="94"/>
+        <image name="客户端-01-类目-医疗_04" width="750" height="177"/>
+        <image name="客户端-01-类目-医疗_06" width="750" height="150"/>
+        <image name="客户端-01-类目-医疗_08" width="750" height="97"/>
+        <image name="客户端-01-类目-医疗_10" width="750" height="204"/>
+        <image name="客户端-01-类目-医疗_12" width="750" height="192"/>
+        <image name="客户端-01-类目-医疗_14" width="750" height="100"/>
+        <image name="客户端-01-类目-医疗_16" width="750" height="98"/>
+    </resources>
+</document>
