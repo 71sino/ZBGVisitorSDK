@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.vendored_libraries  = "Classes/**/*.a"
   s.public_header_files = "Classes/**/*.h"
 
-  s.resources =  ['Classes/Resources/HappyWinBundle.bundle','Classes/Resources/LYTChatProgressHUD.bundle','Classes/Resources/HPWRefresh.bundle']
+  s.resources =  ['Classes/Resource/HappyWinBundle.bundle','Classes/Resource/LYTChatProgressHUD.bundle','Classes/Resource/HPWRefresh.bundle']
 
   s.libraries = "xml2.2", "z","sqlite3.0"
 
