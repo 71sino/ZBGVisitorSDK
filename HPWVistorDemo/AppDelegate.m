@@ -19,24 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-        //2、注册公司信息（这个信息需要登陆管理中心->APP接入 注册信息）
-//    [[HPWVistor sharedVistor] registerCommpanyCode:@"114716" appkey:@"7a9abab2-8c22-49a8-86ec-90c516f982d1"];
-    
-    //运营对外使用的公司代号
-//    [[HPWVistor sharedVistor] registerCommpanyCode:@"192589" appkey:@"34927760-e32f-4d5d-9556-c2c8b44b400b" environment:HPWEnvironmentTypeRelease];
-//
-    //蓝海金融
-//    [[HPWVistor sharedVistor] registerCommpanyCode:@"114547" appkey:@"a0442a8a-a66e-4ad2-a947-cbdd6c99f1bf" environment:HPWEnvironmentTypeRelease];
-//
-    
     [[HPWVistor sharedVistor] registerCommpanyCode:@"144772" appkey:@"147021056165453" environment:HPWEnvironmentTypeRelease];
 
-    
-//    [[HPWVistor sharedVistor] registerCommpanyCode:@"128212" appkey:@"6868ca56-3740-4ab1-aa41-d827fa617540" environment:HPWEnvironmentTypeRelease];
-    //外网预发布13322
-//        [[HPWVistor sharedVistor] registerCommpanyCode:@"13322" appkey:@"98e8d298-02dc-4963-bbc9-0152a6cdc6ca" environment:HPWEnvironmentTypePrepareRelease];
-    
-//          [[HPWVistor sharedVistor] registerCommpanyCode:@"141205" appkey:@"6f367770-0838-4ea0-9073-13b9c7fb1263"];
+
         
     //3、设置主题色
     [self setupNavigationBar];

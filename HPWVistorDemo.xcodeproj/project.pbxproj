@@ -1795,6 +1795,7 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hhly.TaiYangHuaID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1900,6 +1901,7 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hhly.TaiYangHuaID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
