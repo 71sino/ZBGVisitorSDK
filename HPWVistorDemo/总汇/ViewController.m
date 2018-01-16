@@ -9,6 +9,13 @@
 #define kUIScreen_bounds_width  self.view.frame.size.width
 #define kIPHONE5 ([UIScreen mainScreen].bounds.size.width > 320)
 #define WS(weakSelf) __weak typeof(self)weakSelf = self;
+#define WKDAlertMessage(__title__, __message__)     [[[UIAlertView alloc] initWithTitle:__title__       \
+message:__message__     \
+delegate:nil             \
+cancelButtonTitle:@"确定"          \
+otherButtonTitles:nil] show]
+
+
 #import "ViewController.h"
 #import "ElectricityView.h"
 #import "SocialView.h"
@@ -20,7 +27,7 @@
 #import "CustomCell.h"
 #import "CustomTableView.h"
 #import "GameViewController.h"
-@interface ViewController ()
+@interface ViewController ()<HPWVistorDelegate>
 @property (nonatomic, strong) CustomTableView *tableView;
 @property (nonatomic, strong) ElectricityView *electricityView;
 @property (nonatomic, strong) GameViewController *gameView2;
@@ -32,15 +39,33 @@
 @property (nonatomic, strong) NSArray *dataSouce;
 @property (nonatomic, strong) NSArray *dataImage;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *tabRightBtn;
+@property (nonatomic,strong) UIButton *unReadNum;
+@property (weak, nonatomic) IBOutlet UITextField *partnerUidTexf;
+
 @end
 
 @implementation ViewController
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [[HPWVistor sharedVistor] queryUnreadNumMessageSucceed:^(NSInteger num) {
+            NSLog(@"主动获取的未读数=%zd",num);
+            [self vistorUnReadMessageNum:num];
+        }];
+    });
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self setNav];
-    [self initGameView2];
+    
+    //设置代理
+    [HPWVistor sharedVistor].delegate = self;
+
+
 }
 - (void)setNav{
     UIButton *btn = [[UIButton alloc] init];
@@ -52,7 +77,63 @@
     UIBarButtonItem *baritem = [[UIBarButtonItem alloc] initWithCustomView:btn];
     btn.tintColor = [UIColor whiteColor];
     self.navigationItem.rightBarButtonItem = baritem;
+    
+    _unReadNum = [UIButton buttonWithType:UIButtonTypeCustom];
+    _unReadNum.titleLabel.font = [UIFont systemFontOfSize:15.f];
+    [_unReadNum setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_unReadNum sizeToFit];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_unReadNum];
+    
 }
+- (IBAction)setUserID:(id)sender {
+    [[HPWVistor sharedVistor] setPartnerUid:self.partnerUidTexf.text];
+    WKDAlertMessage(@"设置成功", @"");
+    
+}
+- (IBAction)something1:(id)sender {
+    [[HPWVistor sharedVistor] addTrajectoryInfo:@"1111111" pageTitle:@"访客发送的轨迹事件1" resolution:@"333333" sourceUrl:@"44444" result:^{
+                WKDAlertMessage(@"设置事件1", @"成功");
+    } fail:^{
+                WKDAlertMessage(@"设置事件1", @"失败");
+    }];
+}
+- (IBAction)something2:(id)sender {
+    [[HPWVistor sharedVistor] addTrajectoryInfo:@"aaaaaa" pageTitle:@"访客发送的轨迹事件2" resolution:@"cccccc" sourceUrl:@"dddddde" result:^{
+        WKDAlertMessage(@"设置事件2", @"成功");
+    } fail:^{
+        WKDAlertMessage(@"设置事件2", @"失败");
+    }];
+}
+- (IBAction)clearGuiji:(UIButton *)sender{
+    [[HPWVistor sharedVistor] clearTrajectoryInfo];
+    WKDAlertMessage(@"清除轨迹成功", @"");
+}
+
+
+
+
+
+
+#pragma mark - HPWVistorDelegate
+
+/**
+ SDK收到了新消息
+ */
+- (void)vistorDidReceiveMessage:(NSString *)content{
+    NSLog(@"收到了消息------------%@--",content);
+}
+
+/**
+ 访客端的消息的未读数
+ */
+- (void)vistorUnReadMessageNum:(NSInteger)num
+{
+    [_unReadNum setTitle:[NSString stringWithFormat:@"未读数=%zd",num] forState:UIControlStateNormal];
+    [_unReadNum sizeToFit];
+    
+}
+
+#pragma mark - 配置子控制器
 - (void)initGameView2 {
     _gameView2 = [[GameViewController alloc] initWithNibName:@"GameViewController" bundle:[NSBundle mainBundle]];
     
@@ -113,15 +194,16 @@
     }];
     [view layoutIfNeeded];
 }
-
-- (void) gotoSDK {
+- (IBAction)gotoSDK {
     //    3、弹出访客端界面
     [[HPWVistor sharedVistor] showView:self dismissCompletion:^{
-
+        
     } errorFail:^{
-
+        
     }];
+
 }
+
 - (void)buttonClick:(UIButton *)sender {
     switch (sender.tag) {
         case 1:
@@ -245,5 +327,9 @@
         _dataImage = @[@"电商",@"医疗",@"游戏",@"社交",@"教育",@"游戏"];
     }
     return _dataImage;
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
 }
 @end

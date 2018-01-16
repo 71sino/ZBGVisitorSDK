@@ -29,7 +29,7 @@
 - (void)setupNavigationBar {
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage visitor_imageWithColor:color227shallblue] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage visitor_imageWithColor:color01a] forBarMetrics:UIBarMetricsDefault];
     if( [[UIDevice currentDevice].systemVersion doubleValue]>=8.0f&&[UINavigationBar conformsToProtocol:@protocol(UIAppearanceContainer)]) {
         [[UINavigationBar appearance] setTranslucent:NO];
     }
