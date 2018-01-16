@@ -2,7 +2,7 @@
 
 SDK     | version | 日期
 ------- | ------------------|---------
-iOS     | HPWVistor3.1.2 | 2018-1
+iOS     | HPWVistor3.1.5 | 2018-1
 
 #### 要求
 iOS8.0 和Xcode 8以上
@@ -13,7 +13,7 @@ iOS8.0 和Xcode 8以上
 前往http://www.71chat.com/ 注册并获取AppKey 和commpanyCode
 #### （2）下载访客端SDK, 解压缩。注：使用CocoaPods的用户可以通过如下名称管理智八哥：
 ```ruby
-pod 'HPWVistor', '~> 3.1.2'
+pod 'HPWVistor', '~> 3.1.5'
 ```
 ##### 注意（搜索之前在终端更新下pod）
 ```ruby

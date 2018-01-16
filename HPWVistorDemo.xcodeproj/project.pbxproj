@@ -187,7 +187,6 @@
 		34C5E5B6D9604521F3C6E3B2 /* libPods-HPWVistorDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HPWVistorDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB49E50867B0934AEFD7828 /* Pods-HPWVistorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPWVistorDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HPWVistorDemo/Pods-HPWVistorDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7A8922025A4E67F17EB3773D /* Pods-HPWVistorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPWVistorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HPWVistorDemo/Pods-HPWVistorDemo.release.xcconfig"; sourceTree = "<group>"; };
-		A78FF2152004C3CA00AEC868 /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		A78FF2172004C3CA00AEC868 /* HPWVistor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPWVistor.h; sourceTree = "<group>"; };
 		A78FF2182004C3CA00AEC868 /* HPWVistorSDKConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPWVistorSDKConfig.h; sourceTree = "<group>"; };
 		A78FF21A2004C3CA00AEC868 /* HPWRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HPWRefresh.bundle; sourceTree = "<group>"; };
@@ -536,7 +535,6 @@
 		A78FF2142004C3CA00AEC868 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A78FF2152004C3CA00AEC868 /* ReadMe.md */,
 				A78FF2162004C3CA00AEC868 /* Headers */,
 				A78FF2192004C3CA00AEC868 /* Resource */,
 				A78FF21D2004C3CA00AEC868 /* libHPWVistor.a */,
