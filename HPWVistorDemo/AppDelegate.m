@@ -22,6 +22,7 @@
     [[HPWVistor sharedVistor] registerCommpanyCode:@"144772" appkey:@"147021056165453" environment:HPWEnvironmentTypeRelease];
 
 
+
     //3、设置主题色
     [self setupNavigationBar];
     return YES;
