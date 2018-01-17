@@ -2,7 +2,7 @@
 
 SDK     | version | 日期
 ------- | ------------------|---------
-iOS     | HPWVistor3.1.5 | 2018-1
+iOS     | HPWVistor3.1.6 | 2018-1-17
 
 #### 要求
 iOS8.0 和Xcode 8以上
