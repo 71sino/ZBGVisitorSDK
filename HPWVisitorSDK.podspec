@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
  
   s.name         = "HPWVisitorSDK"
 
-  s.version      = "3.1.6"
+  s.version      = "3.2.0"
 
   s.summary      = "HPWVistor for 智八哥"
 
@@ -29,6 +29,6 @@ Pod::Spec.new do |s|
   s.resources =  ['Classes/Resource/HappyWinBundle.bundle','Classes/Resource/LYTChatProgressHUD.bundle','Classes/Resource/HPWRefresh.bundle']
 
   s.libraries = "xml2.2", "z","sqlite3.0"
-  s.dependency "LYMqttSDK", "~> 1.0.0"
+  s.dependency "LYMqttSDK", "~> 2.0.09"
 
 end

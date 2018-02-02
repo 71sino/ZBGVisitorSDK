@@ -3,6 +3,6 @@ platform :ios, '8.0'
 
 target 'HPWVistorDemo' do
 
-  pod "LYTSDK", "1.0.06"
- 
+pod 'LYTSDK', '~> 2.0.09'
+
 end

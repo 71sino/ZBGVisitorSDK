@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HPWVistor.h"
 #import "UIImage+HPWTool.h"
+#import <LYTSDK.h>
 
 @interface AppDelegate ()
 
@@ -19,8 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    [[HPWVistor sharedVistor] registerCommpanyCode:@"144772" appkey:@"147021056165453" environment:HPWEnvironmentTypeRelease];
-
+//    [[HPWVistor sharedVistor] registerCommpanyCode:@"144772" appkey:@"147021056165453" environment:HPWEnvironmentTypeRelease];
+    [[HPWVistor sharedVistor] registerCommpanyCode:@"128212" appkey:@"6868ca56-3740-4ab1-aa41-d827fa617540" environment:HPWEnvironmentTypeRelease];
+    [LYTSDKSetting isPrintDebugLog:YES];
 
 
     //3、设置主题色

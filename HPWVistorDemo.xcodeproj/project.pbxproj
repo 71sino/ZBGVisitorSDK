@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A78FF21F2004C3CA00AEC868 /* HPWRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A78FF21A2004C3CA00AEC868 /* HPWRefresh.bundle */; };
-		A78FF2202004C3CA00AEC868 /* HappyWinBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A78FF21B2004C3CA00AEC868 /* HappyWinBundle.bundle */; };
-		A78FF2212004C3CA00AEC868 /* LYTChatProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A78FF21C2004C3CA00AEC868 /* LYTChatProgressHUD.bundle */; };
-		A78FF2222004C3CA00AEC868 /* libHPWVistor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A78FF21D2004C3CA00AEC868 /* libHPWVistor.a */; };
 		DE248A5C1FB2DB6300B0C719 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE248A5B1FB2DB6300B0C719 /* UserNotifications.framework */; };
 		DE248A5E1FB2DB7000B0C719 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE248A5D1FB2DB7000B0C719 /* CoreTelephony.framework */; };
 		DE248AF41FB2DD8B00B0C719 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DE248AF31FB2DD8B00B0C719 /* libxml2.2.tbd */; };
@@ -180,6 +176,10 @@
 		DE74DE311FB2B2040028D136 /* YYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74DDA51FB2B2040028D136 /* YYLabel.m */; };
 		DE74DE321FB2B2040028D136 /* YYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74DDA81FB2B2040028D136 /* YYTextView.m */; };
 		DE9DFEFD1FB2DBAC00D4BAD4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9DFEFC1FB2DBAC00D4BAD4 /* libz.tbd */; };
+		DEE20B5120240891006F3185 /* HappyWinBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DEE20B4920240891006F3185 /* HappyWinBundle.bundle */; };
+		DEE20B5220240891006F3185 /* HPWRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DEE20B4A20240891006F3185 /* HPWRefresh.bundle */; };
+		DEE20B5320240891006F3185 /* LYTChatProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DEE20B4B20240891006F3185 /* LYTChatProgressHUD.bundle */; };
+		DEE20B5420240891006F3185 /* libHPWVistor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE20B4C20240891006F3185 /* libHPWVistor.a */; };
 		FF71B2017B9876D93ABB6E49 /* libPods-HPWVistorDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C5E5B6D9604521F3C6E3B2 /* libPods-HPWVistorDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -187,12 +187,6 @@
 		34C5E5B6D9604521F3C6E3B2 /* libPods-HPWVistorDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HPWVistorDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB49E50867B0934AEFD7828 /* Pods-HPWVistorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPWVistorDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HPWVistorDemo/Pods-HPWVistorDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7A8922025A4E67F17EB3773D /* Pods-HPWVistorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPWVistorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HPWVistorDemo/Pods-HPWVistorDemo.release.xcconfig"; sourceTree = "<group>"; };
-		A78FF2172004C3CA00AEC868 /* HPWVistor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPWVistor.h; sourceTree = "<group>"; };
-		A78FF2182004C3CA00AEC868 /* HPWVistorSDKConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPWVistorSDKConfig.h; sourceTree = "<group>"; };
-		A78FF21A2004C3CA00AEC868 /* HPWRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HPWRefresh.bundle; sourceTree = "<group>"; };
-		A78FF21B2004C3CA00AEC868 /* HappyWinBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HappyWinBundle.bundle; sourceTree = "<group>"; };
-		A78FF21C2004C3CA00AEC868 /* LYTChatProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LYTChatProgressHUD.bundle; sourceTree = "<group>"; };
-		A78FF21D2004C3CA00AEC868 /* libHPWVistor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHPWVistor.a; sourceTree = "<group>"; };
 		DE248A5B1FB2DB6300B0C719 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		DE248A5D1FB2DB7000B0C719 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		DE248AF31FB2DD8B00B0C719 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
@@ -503,6 +497,12 @@
 		DE74DDA71FB2B2040028D136 /* YYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextView.h; sourceTree = "<group>"; };
 		DE74DDA81FB2B2040028D136 /* YYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextView.m; sourceTree = "<group>"; };
 		DE9DFEFC1FB2DBAC00D4BAD4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DEE20B4920240891006F3185 /* HappyWinBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HappyWinBundle.bundle; sourceTree = "<group>"; };
+		DEE20B4A20240891006F3185 /* HPWRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HPWRefresh.bundle; sourceTree = "<group>"; };
+		DEE20B4B20240891006F3185 /* LYTChatProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LYTChatProgressHUD.bundle; sourceTree = "<group>"; };
+		DEE20B4C20240891006F3185 /* libHPWVistor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHPWVistor.a; sourceTree = "<group>"; };
+		DEE20B4F20240891006F3185 /* HPWVistor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPWVistor.h; sourceTree = "<group>"; };
+		DEE20B5020240891006F3185 /* HPWVistorSDKConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPWVistorSDKConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -513,7 +513,7 @@
 				DE248AF41FB2DD8B00B0C719 /* libxml2.2.tbd in Frameworks */,
 				DE9DFEFD1FB2DBAC00D4BAD4 /* libz.tbd in Frameworks */,
 				DE248A5E1FB2DB7000B0C719 /* CoreTelephony.framework in Frameworks */,
-				A78FF2222004C3CA00AEC868 /* libHPWVistor.a in Frameworks */,
+				DEE20B5420240891006F3185 /* libHPWVistor.a in Frameworks */,
 				DE248A5C1FB2DB6300B0C719 /* UserNotifications.framework in Frameworks */,
 				DE74DC361FB2B0D90028D136 /* libsqlite3.tbd in Frameworks */,
 				FF71B2017B9876D93ABB6E49 /* libPods-HPWVistorDemo.a in Frameworks */,
@@ -535,30 +535,11 @@
 		A78FF2142004C3CA00AEC868 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A78FF2162004C3CA00AEC868 /* Headers */,
-				A78FF2192004C3CA00AEC868 /* Resource */,
-				A78FF21D2004C3CA00AEC868 /* libHPWVistor.a */,
+				DEE20B4D20240891006F3185 /* include */,
+				DEE20B4C20240891006F3185 /* libHPWVistor.a */,
+				DEE20B4820240891006F3185 /* Resource */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		A78FF2162004C3CA00AEC868 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				A78FF2172004C3CA00AEC868 /* HPWVistor.h */,
-				A78FF2182004C3CA00AEC868 /* HPWVistorSDKConfig.h */,
-			);
-			path = Headers;
-			sourceTree = "<group>";
-		};
-		A78FF2192004C3CA00AEC868 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				A78FF21A2004C3CA00AEC868 /* HPWRefresh.bundle */,
-				A78FF21B2004C3CA00AEC868 /* HappyWinBundle.bundle */,
-				A78FF21C2004C3CA00AEC868 /* LYTChatProgressHUD.bundle */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		DE74DA061FB2AFE40028D136 = {
@@ -1296,6 +1277,33 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		DEE20B4820240891006F3185 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DEE20B4920240891006F3185 /* HappyWinBundle.bundle */,
+				DEE20B4A20240891006F3185 /* HPWRefresh.bundle */,
+				DEE20B4B20240891006F3185 /* LYTChatProgressHUD.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DEE20B4D20240891006F3185 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				DEE20B4E20240891006F3185 /* HPWVistorSDK */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		DEE20B4E20240891006F3185 /* HPWVistorSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DEE20B4F20240891006F3185 /* HPWVistor.h */,
+				DEE20B5020240891006F3185 /* HPWVistorSDKConfig.h */,
+			);
+			path = HPWVistorSDK;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1365,6 +1373,7 @@
 				DE74DC6D1FB2B1FA0028D136 /* MedicalView.xib in Resources */,
 				DE74DE181FB2B2040028D136 /* license in Resources */,
 				DE74DDFD1FB2B2040028D136 /* LICENSE.txt in Resources */,
+				DEE20B5220240891006F3185 /* HPWRefresh.bundle in Resources */,
 				DE74DDDB1FB2B2040028D136 /* LICENSE in Resources */,
 				DE74DC741FB2B1FA0028D136 /* GameViewController.xib in Resources */,
 				DE74DA1F1FB2AFE40028D136 /* Assets.xcassets in Resources */,
@@ -1380,10 +1389,9 @@
 				DE74DE161FB2B2040028D136 /* SVProgressHUD.bundle in Resources */,
 				DE74DE021FB2B2040028D136 /* LICENCE.txt in Resources */,
 				DE74DC651FB2B1FA0028D136 /* PresaleView.xib in Resources */,
-				A78FF21F2004C3CA00AEC868 /* HPWRefresh.bundle in Resources */,
-				A78FF2202004C3CA00AEC868 /* HappyWinBundle.bundle in Resources */,
+				DEE20B5120240891006F3185 /* HappyWinBundle.bundle in Resources */,
 				DE74DDF71FB2B2040028D136 /* MJRefresh.bundle in Resources */,
-				A78FF2212004C3CA00AEC868 /* LYTChatProgressHUD.bundle in Resources */,
+				DEE20B5320240891006F3185 /* LYTChatProgressHUD.bundle in Resources */,
 				DE74DC691FB2B1FA0028D136 /* EducationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
