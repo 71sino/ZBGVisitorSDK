@@ -29,6 +29,6 @@ Pod::Spec.new do |s|
   s.resources =  ['Classes/Resource/HappyWinBundle.bundle','Classes/Resource/LYTChatProgressHUD.bundle','Classes/Resource/HPWRefresh.bundle']
 
   s.libraries = "xml2.2", "z","sqlite3.0"
-  s.dependency "LYMqttSDK", "~> 2.0.09"
+  s.dependency "LYTSDK", "~> 2.0.09"
 
 end
