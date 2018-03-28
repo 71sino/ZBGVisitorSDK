@@ -62,7 +62,7 @@ typedef NS_ENUM(NSInteger, HPWEnvironmentType) {
  @param completion 访客SDK视图dismiss完成
  @param fail SDK出现错误
  */
-- (void)showView:(UIViewController *)mainCon dismissCompletion:(void (^)())completion errorFail:(void(^)())fail;
+- (void)showView:(UIViewController *)mainCon dismissCompletion:(void (^)(void))completion errorFail:(void(^)(void))fail;
 
 #pragma mark - 可选设置
 /**
@@ -93,7 +93,7 @@ typedef NS_ENUM(NSInteger, HPWEnvironmentType) {
                     pageTitle:(NSString *)pageTitle
                    resolution:(NSString *)resolution
                     sourceUrl:(NSString *)sourceUrl
-                       result:(void (^)())success fail:(void (^)())fail;
+                       result:(void (^)(void))success fail:(void (^)(void))fail;
 /**
  清除用户轨迹
  */

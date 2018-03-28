@@ -2,10 +2,10 @@
 
 SDK     | version | 日期
 ------- | ------------------|---------
-iOS     | HPWVistor3.2.0 | 2018-1-29
+iOS     | HPWVistor3.3.0 | 2018-3-28
 
 #### 要求
-iOS8.0 和Xcode 8以上
+iOS8.0 和Xcode 9以上
 ## 一、简介
 智八哥访客端是提供给客户嵌入到应用内部的SDK，只需要传入commpanyCode和appkey就能使访客和客服人员就能聊天。同时给开发者简便、易用的API接口，方便快速接入。
 ## 二、 接入准备
@@ -13,7 +13,7 @@ iOS8.0 和Xcode 8以上
 前往http://www.71chat.com/ 注册并获取AppKey 和commpanyCode
 #### （2）下载访客端SDK, 解压缩。注：使用CocoaPods的用户可以通过如下名称管理智八哥：
 ```ruby
-pod 'HPWVisitorSDK', '~> 3.2.0'
+pod 'HPWVisitorSDK', '~> 3.3.0'
 ```
 ##### 注意（搜索之前在终端更新下pod）
 ```ruby

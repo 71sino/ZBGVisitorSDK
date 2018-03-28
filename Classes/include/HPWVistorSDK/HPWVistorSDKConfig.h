@@ -14,6 +14,8 @@
 
 //导航栏的背景颜色
 extern   UIColor * HPWNavigationBackgroudColor;
+//导航栏字体颜色
+extern UIColor * HPWNavigationTitleColor;
 //客服发送消息的字体颜色
 extern   UIColor * HPWServiceSendCellTextColor;
 //访客发送消息的字体颜色
